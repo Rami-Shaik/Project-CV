@@ -47,6 +47,13 @@
 
 /* HEADER */
 
+#photo_cv 
+{
+    margin-left: -30.5em;
+    margin-top: -5em;
+    position: absolute;
+}
+
 header
 {
     margin-left: 4.375em;
@@ -215,9 +222,9 @@ footer
     margin-top: 3.125em;
 }
 
-#recommandation h1
+h5
 {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #recommandation ul
@@ -225,6 +232,7 @@ footer
     list-style: none;
     font-weight: bold;
     margin-left: -2.5em;
+    margin-top: -1em;
 }
 
 .non_bold_recommandation
@@ -242,51 +250,59 @@ footer
 /* ASIDE */
 
     /* PHOTO CV */
-#photo_cv
+/*#photo_cv
 {
     display: flex;
     width: 15em;
     height: 15em;
     margin: 5% auto;
-}
+}*/
 
 aside p
 {
     color: #E0E0E0;
+    text-align: center;
 }
+
 aside 
 {
     color: #E0E0E0;
 }
 
-aside h1
-{
-    border: 0px solid #E0E0E0;
-    background-color: #E0E0E0;
-    text-align: center;
-    color: #6D4C41;
-}
-
 #contact
 {
-    margin-top: 1em;
+    margin-top: 10em;
+    text-align: center;
+    background-color: #E0E0E0;
+    color: #6D4C41;
+    font-size: 2em;
 }
 
 #aproposdemoi
 {
     margin-top: 5em;
+    text-align: center;
+    background-color: #E0E0E0;
+    color: #6D4C41;
+    font-size: 2em;
 }
 
 #loisirs
 {
-    margin-top: 24em;
+    margin-top: 21.5em;
+    text-align: center;
+    background-color: #E0E0E0;
+    color: #6D4C41;
+    font-size: 2em;
 }
+
 aside ul
 {
     list-style: none;
     margin-left: 1em;
     height: 15em;
     width: 84%;
+    color:#E0E0E0;
 }
 
 aside li
@@ -320,19 +336,226 @@ aside i
     justify-content: space-around;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 3em;
+    margin-top: -0.2em;
 }
 
 /* ASIDE */
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width:1284px)
+{
+    section ul
+    {
+        width: auto;  
+    }
+    
+    section p, section h3, section h4
+    {
+        margin-left: 0em;
+    }
+    
+    section h3
+    {
+        margin-top: 1.5em;
+    }
+    
+    section h3:nth-child(2)
+    {
+        margin-top: 1.5em;
+    }
+    
+    section h3:nth-child(6)
+    {
+        margin-top: 1.5em;
+    }
+    
+    section h3:nth-child(10)
+    {
+        margin-top: 1.5em;
+    }
+    
+    section:nth-child(3) br
+    {
+        display: none;
+    }
+    
+    section:nth-child(2) br
+    {
+        display: none;
+    }
+    
+    section:nth-child(2) ul:nth-child(1)
+    {
+        margin-top: auto;
+    }
+    
+    section:nth-child(2) ul
+    {
+        margin-top: 4em;
+    }
+    
+    section:nth-child(3) ul:nth-child(1)
+    {
+        margin-top: auto;
+    }
+    
+    section:nth-child(3) ul
+    {
+        margin-top: 4em;
+    }
+    
+    .recommandation
+    {
+        margin-top: -2em;
+        margin-bottom: 4em;
+    }
+    
+    #aproposdemoi
+    {
+        margin-top: 8em;
+    }
+    
+    #loisirs
+    {
+        margin-top: 28em;
+    }
+    
+    aside p 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+@media screen and (max-width:1100px)
+{
+    .recommandation:nth-child(2)
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:768px)
+{
+    #bloc_page
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bloc_page:nth-child(1)
+    {
+        width: auto;
+    }
+    
+    .bloc_page:nth-child(2)
+    {
+        width: auto;
+        padding-top: 2em;
+    }
+    
+    #photo_cv
+    {
+        position:static;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:575px)
+{
+    #recommandation
+    {
+        flex-direction: column;
+    }
+    
+    .recommandation:nth-child(2)
+    {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #photo_cv
+    {
+        
+    }
+    
+        header h1
+    {
+        font-size: 2.5em;
+    }
+    
+    header h2
+    {
+        font-size: 1.2em;
+    }
+    
+    section:nth-child(2) br
+    {
+        display: none;
+    }
+    
+    section:nth-child(2)
+    {
+        margin-top: 5em; 
+    }
+    
+    section:nth-child(2) ul
+    {
+        margin-top: 4em;
+    }
+    
+    section:nth-child(2) ul:nth-child(1)
+    {
+        margin-top: auto;
+    }
+    
+    section:nth-child(3) br
+    {
+        display: none;
+    }
+    
+    section:nth-child(3) ul
+    {
+        margin-top: 4em;
+    }
+    
+    section:nth-child(3) ul:nth-child(1)
+    {
+        margin-top: auto;
+    }
+    
+    .recommandation:nth-child(1)
+    {
+        margin-top: -1.5em;
+    }
+    
+    .recommandation:nth-child(2)
+    {
+        margin-bottom: 2em;
+    }
+    
+    .bloc_page:nth-child(2)
+    {
+        padding-top: 4em;
+    }
+    #contact
+    {
+        margin-top: auto;
+        font-size: 1.5em;
+    }
+    
+    #aproposdemoi
+    {
+        margin-top: 5em;
+        font-size: 1.5em;
+    }
+    
+    #loisirs
+    {
+        margin-top: 15em;
+        font-size: 1.5em;
+    }
 
-
-
-
-
-
-
-
+}
 /* */
