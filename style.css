@@ -1,34 +1,27 @@
-/* BLOC DE LA PAGE */
+/* BLOC */
 
-#bloc_page
+#bloc
 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
 }
 
-.bloc_page
-{
-    width: 74.375em;
-    height: auto;
-}
-
-.bloc_page:nth-child(1)
-{
-    
-    background-color: #E0E0E0;
-    width: 68%;
-    height: auto;
-}
-
-.bloc_page:nth-child(2)
+body
 {
     background-color: #6D4C41;
-    width: 32%;
-    height: auto;
+    margin: 0;
 }
 
-/* BLOC DE LA PAGE /*
+.bloc:nth-child(1)
+{
+    width: 68%;
+    background-color: white;
+}
+
+.bloc:nth-child(2)
+{
+    width: 32%;
+}
 
 /* POLICE */
 
@@ -45,45 +38,88 @@
 
 /* POLICE */
 
-/* HEADER */
+/* COLOR */
 
-#photo_cv 
-{
-    margin-left: -30.5em;
-    margin-top: -5em;
-    position: absolute;
-}
-
-header
-{
-    margin-left: 4.375em;
-    margin-top: 7.5em;
-}
-
-header h1
+#texte h1 
 {
     font-weight: normal;
-    font-size: 3em;
 }
 
 #prenom
 {
-    color:#6D4C41;
-    font-weight: bold;  
+    color: #6D4C41;
+    font-weight: bold;
+}
+
+#texte h2
+{
+    color:grey;
+    font-weight: normal;
+}
+
+hr, i, ul, aside h2
+{
+    color: #6D4C41;
+}
+
+aside p, aside ul, aside i
+{
+    color: #E0E0E0;
+}
+
+/* COLOR */
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    background-color: white;
+}
+
+#photo
+{
+    width: 32%;
+    background-color: #6D4C41;
+}
+
+#texte
+{
+    width: 68%;
+}
+
+#photo_cv
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: thick double white;
+    border-radius: 50%;
+    width: 12em;
+    height: 12em;
+    margin-top: 4em;
+}
+
+header h1
+{
+    margin-left: 1.5em;
+    margin-top: 2em;
+    font-size: 3em;
 }
 
 header h2
 {
-    color:grey;
+    margin-left: 3.1em;
     margin-top: -1.5em;
 }
 
 header hr
 {
-    background-color: #6D4C41;
-    margin-right: 71em;
-    margin-top: -1.3em;
+    margin-left: 4.7em;
+    margin-top: -1.5em;
     height: 0.1em;
+    background-color: #6D4C41;
+    width: 5.8%;
 }
 
 /* HEADER */
@@ -97,55 +133,53 @@ section, footer
 
 section i, footer i
 {
-    color: #6D4C41;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .titre_section
 {
+    font-size: 1.1;
     margin-left: 1em;
-    font-size: 1.2em;
 }
 
 section hr, footer hr
 {
-    margin-right: 3.125em;
-    background-color: #6D4C41;
     height: 0.15em;
     margin-top: -1em;
+    margin-right: 3.125em;
+    background-color: #6D4C41;
 }
 
-section h2
+section ul 
+{
+    width: 20%;
+    margin-top: 5%;
+}
+
+section h3, section h4, section p
+{
+    width: 79%;
+    margin-left: 20%;
+}
+
+section h3
+{
+    margin-top: -3em;
+}
+
+section:nth-child(2) h3
+{
+    margin-top: -4em;
+}
+
+section h4
 {
     font-weight: normal;
-    font-size: 1.4em;
-    margin-top: -0.5em;
-    font-weight: bold;  
 }
 
-section:nth-child(2)
+section, footer
 {
-    margin-top: 10em;
-}
-
-ul:nth-child(1)
-{
-    margin-top: 3em;
-}
-
-ul:nth-child(5)
-{
-    margin-top: 3em;
-}
-
-ul:nth-child(9)
-{
-    margin-top: 3em;
-}
-
-ul
-{
-    color:#6D4C41;
+    margin-top: 5em;
 }
 
 .liste
@@ -155,420 +189,503 @@ ul
 
 .puce
 {
-    list-style:circle;
-}
-.section
-{
-    padding-top: 2em;
+    list-style: circle;
 }
 
-section ul
+/* SECTION */ 
+
+/* FOOTER */
+
+footer h5
 {
-    width: 15%;
+    font-size: 1em;
+    margin-top: 3em;
 }
 
-section h3
-{
-    margin-left: 20%;
-    margin-top: -3.1em;
-}
-
-section:nth-child(3)
-{
-    margin-top: 5em;
-}
-section:nth-child(3) h3
-{
-    margin-top: -4.3em;
-    font-size: 1.2em;
-}
-
-section h4
-{
-    margin-left: 20%;
-    font-weight: normal;
-    font-size: 1.1em;
-}
-
-section p
-{
-    margin-right: 3.125em;
-    margin-left: 20%;
-    text-align: justify;
-}
-
-/* SECTION */
-
-/* RECOMMANDATION */
-
-footer 
-{
-    padding-top: 2em;
-}
-#titre_footer
-{
-    margin-left: 0.4em;
-    font-size: 1.2em; 
-}
-#icone_footer
-{
-    font-size: 1.3em;
-}
 #recommandation
 {
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    margin-top: 3.125em;
+    justify-content: space-between;
+    width: 50%;
 }
 
-h5
-{
-    font-size: 1.2em;
-}
-
-#recommandation ul
+footer ul
 {
     list-style: none;
-    font-weight: bold;
     margin-left: -2.5em;
-    margin-top: -1em;
+    font-weight: bold;
 }
 
 .non_bold_recommandation
 {
-    font-weight: normal;
+   font-weight: normal;
 }
 
-.recommandation:nth-child(2)
-{
-    margin-left: 15em;
-}
-
-/* RECOMMANDATION */
+/* FOOTER */
 
 /* ASIDE */
 
-    /* PHOTO CV */
-/*#photo_cv
+aside
 {
-    display: flex;
-    width: 15em;
-    height: 15em;
-    margin: 5% auto;
-}*/
+    background-color: #6D4C41;
+    height: 95%;
+}
 
-aside p
+.aside
 {
-    color: #E0E0E0;
+    background-color: white;
     text-align: center;
 }
 
-aside 
+.aside:nth-child(1)
 {
-    color: #E0E0E0;
+    margin-top: 2em;
 }
 
-#contact
+.aside:nth-child(3)
 {
-    margin-top: 10em;
-    text-align: center;
-    background-color: #E0E0E0;
-    color: #6D4C41;
-    font-size: 2em;
+    margin-top: 3em;
 }
 
-#aproposdemoi
+.aside:nth-child(5)
 {
-    margin-top: 5em;
-    text-align: center;
-    background-color: #E0E0E0;
-    color: #6D4C41;
-    font-size: 2em;
-}
-
-#loisirs
-{
-    margin-top: 21.5em;
-    text-align: center;
-    background-color: #E0E0E0;
-    color: #6D4C41;
-    font-size: 2em;
+    margin-top: 22em;
 }
 
 aside ul
 {
     list-style: none;
-    margin-left: 1em;
-    height: 15em;
-    width: 84%;
-    color:#E0E0E0;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 aside li
 {
-    height: 4em;
     justify-content: space-between;
+    height: 4em;
 }
 
 aside p
 {
-    height: 1em;
-    width: 84%;
-    text-align:justify;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 3em;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 aside i
 {
     font-size: 2em;
-    border: 2px solid #E0E0E0;
+    color: white;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 15px;
 }
-
 
 #icone_loisirs
 {
     display: flex;
     justify-content: space-around;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: -0.2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 /* ASIDE */
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:1284px)
+@media screen and (max-width:1440px)
 {
-    section ul
+    .aside:nth-child(5)
     {
-        width: auto;  
+        margin-top: 17em;
     }
     
-    section p, section h3, section h4
+    .recommandation:nth-child(2)
     {
-        margin-left: 0em;
+        margin-right: -5em;
+    }
+    
+    section p
+    {
+        width: 75%
+    }
+}
+
+@media screen and (max-width:1024px)
+{
+    header hr
+    {
+        width: 10%
+    }
+    
+    section p
+    {
+        width: 72%;
+    }
+    
+    section h4, section p
+    {
+        margin-left: 10em;
     }
     
     section h3
     {
-        margin-top: 1.5em;
+        margin-left: 8.5em;
     }
     
-    section h3:nth-child(2)
+    .aside:nth-child(5)
     {
-        margin-top: 1.5em;
+        margin-top: 11em;
     }
     
-    section h3:nth-child(6)
+    #icone_loisirs
     {
-        margin-top: 1.5em;
+        width: 75%
     }
     
-    section h3:nth-child(10)
-    {
-        margin-top: 1.5em;
-    }
-    
-    section:nth-child(3) br
-    {
-        display: none;
-    }
-    
-    section:nth-child(2) br
-    {
-        display: none;
-    }
-    
-    section:nth-child(2) ul:nth-child(1)
-    {
-        margin-top: auto;
-    }
-    
-    section:nth-child(2) ul
-    {
-        margin-top: 4em;
-    }
-    
-    section:nth-child(3) ul:nth-child(1)
-    {
-        margin-top: auto;
-    }
-    
-    section:nth-child(3) ul
-    {
-        margin-top: 4em;
-    }
-    
-    .recommandation
-    {
-        margin-top: -2em;
-        margin-bottom: 4em;
-    }
-    
-    #aproposdemoi
-    {
-        margin-top: 8em;
-    }
-    
-    #loisirs
-    {
-        margin-top: 28em;
-    }
-    
-    aside p 
-    {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-@media screen and (max-width:1100px)
-{
     .recommandation:nth-child(2)
     {
-        margin-left: auto;
-        margin-right: auto;
+        margin-right: -10em;
     }
 }
+
 @media screen and (max-width:768px)
 {
-    #bloc_page
+    header
     {
-        display: flex;
         flex-direction: column;
     }
     
-    .bloc_page:nth-child(1)
+    header hr
     {
-        width: auto;
+        width: 14%
     }
     
-    .bloc_page:nth-child(2)
+    #photo
     {
-        width: auto;
-        padding-top: 2em;
+        width: 100%;
     }
     
     #photo_cv
     {
-        position:static;
-        margin: auto;
-    }
-    
-    #contact
-    {
         margin-top: auto;
-        font-size: 1.5em;
+        margin-bottom: auto;
     }
     
-    #aproposdemoi
+    #texte
     {
-        margin-top: 5em;
-        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -4em;
+        margin-bottom: 2em;
     }
     
-    #loisirs
+    body
     {
-        margin-top: 10em;
-        font-size: 1.5em;
+        background-color: white;
     }
     
-}
-@media screen and (max-width:575px)
-{
-    #recommandation
+    #bloc
     {
         flex-direction: column;
     }
     
-    .recommandation:nth-child(2)
+    section
     {
-        margin-left: 0px;
-    }
-}
-@media screen and (max-width:500px)
-{
-        header h1
-    {
-        font-size: 2.5em;
-    }
-    
-    header h2
-    {
-        font-size: 1.2em;
-    }
-    
-    section:nth-child(2) br
-    {
-        display: none;
+        margin-top: 1em;
     }
     
     section:nth-child(2)
     {
-        margin-top: 5em; 
+        margin-top: 4em;
     }
     
-    section:nth-child(2) ul
+    section hr, footer hr
+    {
+        width: 100%;
+    }
+    
+    section h3, section h4, section p
+    {
+        width: 100%;
+    }
+    
+    footer
     {
         margin-top: 4em;
     }
     
-    section:nth-child(2) ul:nth-child(1)
+    #recommandation
     {
-        margin-top: auto;
+        width: 70%;
     }
     
-    section:nth-child(3) br
+    .bloc_page
+    {
+        background-color: white;
+    }
+    
+    .bloc:nth-child(2)
+    {
+       width: 100%;
+    }
+    
+    .aside
+    {
+        background-color: #6D4C41;
+        color: white;
+    }
+    
+    aside p, aside ul, aside i
+    {
+        color: #6D4C41;
+    }
+    
+    aside ul
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #contact_droite
+    {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .aside:nth-child(3)
+    {
+        margin-top: 2em;
+    }
+    
+    aside p
+    {
+        width: 90%;
+    }
+    
+    .aside:nth-child(5)
+    {
+        margin-top: 2em;
+    }
+    
+    #icone_loisirs
+    {
+        width: 50%;
+        font-size: 1.2em;
+    }
+    
+    aside i
+    {
+        border: 2px solid #6D4C41;
+    }
+}
+
+@media screen and (max-width:425px)
+{
+    header
+    {
+        width: 100%
+    }
+      
+    #photo_cv
+    {
+        width: 10em;
+        height: 10em;
+    }
+    
+    #texte
+    {
+        width: 100%;
+    }
+    
+    header h1
+    {
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: 3em;
+    }
+    
+    header h2
+    {
+        font-size: 1em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 69%;
+    }
+    
+    header hr
+    {
+        margin-left: 4.2em;
+        width: 11%;
+        margin-top: -1em;
+    }
+    
+    #bloc
+    {
+        width: 100%;
+    }
+    
+    .bloc:nth-child(1)
+    {
+        width: 100%;
+    }
+    
+    section, footer
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    section h2, footer h2
+    {
+        font-size: 1.3em;
+        margin-left: 0.5em;
+    }
+    
+    section hr, footer hr
+    {
+        width: 93%;
+    }
+    
+    .section ul
+    {
+        width: 100%;
+        margin-top: 15%;
+    }
+    
+    .section ul br
     {
         display: none;
     }
     
-    section:nth-child(3) ul
+    section h3, section h4, section p
     {
-        margin-top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        margin-top: auto;
     }
     
-    section:nth-child(3) ul:nth-child(1)
+    section:nth-child(2) h3, section:nth-child(2) h4, section:nth-child(2) p
     {
         margin-top: auto;
     }
     
-    .recommandation:nth-child(1)
+    #recommandation
     {
-        margin-top: -1.5em;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    .recommandation:nth-child(2)
+    aside ul
     {
-        margin-bottom: 2em;
+        flex-direction: column;
+        margin-left: 6%;
     }
     
-    .bloc_page:nth-child(2)
+    #icone_loisirs
     {
-        padding-top: 4em;
+        width: 70%;
     }
-    #contact
-    {
-        margin-top: auto;
-        font-size: 1.5em;
-    }
-    
-    #aproposdemoi
-    {
-        margin-top: 5em;
-        font-size: 1.5em;
-    }
-    
-    #loisirs
-    {
-        margin-top: 15em;
-        font-size: 1.5em;
-    }
-
 }
-/* */
+
+@media screen and (max-width:375px)
+{
+    header h1
+    {
+        font-size: 1.9em;
+    }
+    
+    header hr
+    {
+        margin-left: 15.5%;
+        width: 13%;
+    }
+    
+    .titre_section
+    {
+        font-size: 0.9em;
+    }
+    
+    section hr, footer hr
+    {
+        width: 97%;
+    }
+    
+    h3, h4, p, ul, h5
+    {
+        font-size: 0.9em;
+    }
+    
+    #recommandation
+    {
+        margin-left: 12%;
+    }
+    aside ul
+    {
+        margin-left: auto;
+    }
+    
+    #icone_loisirs
+    {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:320px)
+{
+    header h1
+    {
+        font-size: 1.6em;
+    }
+    
+    header h2
+    {
+        font-size: 0.9em
+    }
+    
+    header hr
+    {
+        margin-top: -0.9em;
+    }
+    
+    section i, footer i
+    {
+        font-size: 0.9em;
+    }
+    
+    .titre_section
+    {
+        font-size: 0.8em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    section hr, footer hr
+    {
+        width: 95%;
+    }
+    
+    section h3, section h4, section p, section ul, footer h5, footer li, aside ul, aside p
+    {
+        font-size: 0.9em
+    }
+    
+    .aside
+    {
+        font-size: 1.3em;
+    }
+    
+    #icone_loisirs
+    {
+        font-size: 1em;
+    }
+    
+}

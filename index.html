@@ -12,24 +12,26 @@
 
 <body>
 
-    <!-- Bloc de page -->
-    <div id="bloc_page">
-        <div class="bloc_page">
-
             <!-- HEADER -->
-
+            
             <header>
-                <img src="Photocv.png" alt="photo cv" id="photo_cv">
+                <div id="photo">
+                <img src="photo_cv.jpg" alt="photo cv" id="photo_cv">
+                </div>
+                <div id="texte">
                 <h1><span id="prenom">RAMI</span> SHAIK NAIF</h1>
                 <h2>Développeur web freelance</h2>
                 <hr>
+                </div>
 
             </header>
 
             <!-- HEADER -->
 
             <!-- SECTION FORMATION -->
-
+            
+            <div id="bloc">
+            <div class="bloc">
             <section>
 
                 <h2><i class="fas fa-graduation-cap"></i> <span class="titre_section">FORMATION</span></h2>
@@ -115,20 +117,24 @@
         <!-- FOOTER -->
 
         <!-- ASIDE -->
-
+        <div class="bloc">
         <aside class="bloc_page">
             <!--<img src="Photocv.png" alt="photo cv" id="photo_cv">-->
-            <h2 id="contact">CONTACT</h2>
+            <h2 class="aside">CONTACT</h2>
             <ul>
+                <div id="contact_gauche">
                 <li>3 rue vauban<br />Grenoble, France</li>
                 <li>Téléphone<br />06 37 23 44 00</li>
                 <li>Email<br />shaiknaif.rami@gmail.com</li>
+                </div>
+                <div id="contact_droite">
                 <li>Site web<br />www.ramishaiknaif.com</li>
                 <li>Skype<br />@shaiknaif_rami</li>
+                </div>
             </ul>
-            <h2 id="aproposdemoi">À PROPOS DE MOI</h2>
+            <h2 class="aside">À PROPOS DE MOI</h2>
             <p>Issue d'une formation de gestion d'entreprise spécialisée en ressources humaines, j'ai eu l'opportunité d'effectuer certaines expériences dans le management, en restauration plus précisement, avant de me recentrer dans le domaine des ressources humaines. Finalement, suite à ma dernière expérience, je souhaitais me reconvertir professionnellement afin de décrouvrir un tout autre domaine qui m'a toujours attiré sans avoir osé franchir le pas jusqu'à présent : le développement web. J'ai donc effectué une formation spécialisé développeur web via OpenClassRooms afin de me lancer dans ce nouveau projet professionnel afin de répondre aux différents besoins du marché actuel.</p>
-            <h2 id="loisirs">LOISIRS</h2>
+            <h2 class="aside">LOISIRS</h2>
             
             <figure id="icone_loisirs">
                 <i class="fas fa-futbol"></i>
@@ -140,6 +146,7 @@
 
         <!-- ASIDE -->
 
+    </div>
     </div>
 
 </body>
