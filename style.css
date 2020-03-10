@@ -127,6 +127,7 @@ body
 .bloc:nth-child(2)
 {
     width: 32%;
+    padding-top: 40px;
     
 }
 
@@ -189,13 +190,10 @@ section h3, section h4, section p
     margin-left: auto;
 }
 
-section h3
-{
-    padding-left: 
-}
+
 .texte_section
 {
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 /* FOOTER */
@@ -257,6 +255,7 @@ aside ul
 {
     list-style: none;
     padding: 0;
+    margin-bottom: 40px;
 }
 
 aside li
@@ -274,7 +273,7 @@ aside p
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    
+    min-height: 650px;
 }
 
 aside i
@@ -293,7 +292,6 @@ aside i
     margin-right: auto;
     width: 70%;
 }
-
 
 /* MEDIA QUERIES */
 
@@ -526,7 +524,9 @@ aside i
     
     aside ul
     {
-        width: 65%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
